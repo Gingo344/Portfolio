@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio Milana Tomića — Web developer i programer iz Kragujevca.">
+  <meta name="description" content="Portfolio">
   <title>Portfolio - Milan Tomić</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -47,9 +47,7 @@
 </head>
 <body class="text-white overflow-x-hidden flex">
 
-<!-- NAVBAR -->
 <nav>
-  <!-- DESKTOP NAV -->
   <div class="hidden md:flex fixed top-0 left-0 h-screen w-72 bg-gradient-to-b from-[#0a0a0a]/95 to-[#1a0000]/95 border-r border-redneon/40 shadow-[0_0_25px_rgba(255,26,26,0.15)] flex-col items-center py-10 z-50 backdrop-blur-md transition-transform duration-300">
     <div class="flex flex-col items-center mb-10">
       <div class="relative">
@@ -75,10 +73,8 @@
     </div>
   </div>
 
-  <!-- MOBILE NAV TOGGLE BUTTON -->
   <div class="md:hidden fixed top-4 left-4 z-50">
     <button id="menu-btn" class="p-3 rounded-md bg-[#1a0000]/80 border border-redneon/50 shadow-[0_0_10px_rgba(255,26,26,0.4)] focus:outline-none">
-      <!-- Hamburger icon -->
       <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-redneon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
           d="M4 6h16M4 12h16M4 18h16" />
@@ -86,7 +82,6 @@
     </button>
   </div>
 
-  <!-- MOBILE SLIDE-IN MENU -->
   <div id="mobile-menu"
     class="fixed top-0 left-0 h-full w-64 bg-gradient-to-b from-[#0a0a0a]/95 to-[#1a0000]/95 border-r border-redneon/40 shadow-[0_0_25px_rgba(255,26,26,0.3)] flex flex-col items-center py-10 z-40 transform -translate-x-full transition-transform duration-300 backdrop-blur-md md:hidden">
 
@@ -113,7 +108,6 @@
   </div>
 </nav>
 
-<!-- JS TOGGLE SCRIPT -->
 <script>
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
@@ -134,7 +128,6 @@
     }
   });
 
-  // automatsko zatvaranje kada klikneš na link
   document.querySelectorAll('#mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.add('-translate-x-full');
@@ -144,11 +137,8 @@
     });
   });
 </script>
-
-
 <main class="md:ml-72 w-full">
 
-<!-- HOME -->
 <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center relative px-6">
   <div class="absolute inset-0 flex justify-center items-center">
     <div class="relative w-80 h-80 rounded-full border border-redneon/50 shadow-glow overflow-hidden">
@@ -163,8 +153,7 @@
   </div>
 </section>
 
-<!-- O MENI -->
-<section id="omeni" class="min-h-screen flex flex-col items-center justify-center px-10 py-16 md:py-20 bg-dark/90 relative overflow-hidden">
+<section id="omeni" class="min-h-screen flex flex-col items-center justify-center px-10 bg-dark/90 relative overflow-hidden">
   <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,26,26,0.08)_0%,transparent_70%)]"></div>
   <h2 class="text-4xl md:text-5xl font-bold text-redneon mb-10 tracking-widest uppercase text-center">O meni</h2>
   <div class="max-w-3xl text-center text-gray-300 leading-relaxed space-y-6">
@@ -174,9 +163,9 @@
   </div>
   <div class="w-24 h-[2px] bg-redneon/50 mt-12 rounded-full shadow-[0_0_15px_rgba(255,26,26,0.5)]"></div>
 </section>
-<section id="obrazovanje" class="min-h-screen flex flex-col items-center justify-center px-6 md:px-10 py-24 bg-dark/95 relative overflow-hidden"> <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,26,26,0.07)_0%,transparent_70%)]"></div> <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-redneon mb-10 sm:mb-12 tracking-widest uppercase animate-fade text-center">Obrazovanje</h2> <div class="max-w-3xl w-full flex flex-col gap-10"> <div class="border-l-4 border-redneon pl-6 hover:shadow-glow transition duration-300"> <h3 class="text-xl font-semibold text-redneon">Srednja škola - Prva kragujevačka gimnazija</h3> <p class="text-gray-400 text-sm">Smer: Odeljenje učenika sa posebnim sposobnostima za računarstvo i informatiku | 2022 - 2026</p> <p class="text-gray-300 mt-2 text-sm leading-relaxed"> Osnovna znanja iz programiranja i mrežnih tehnologija — temelj kasnijeg IT puta. </p> </div> <div class="border-l-4 border-redneon pl-6 hover:shadow-glow transition duration-300"> <h3 class="text-xl font-semibold text-redneon">Online kursevi i sertifikacije</h3> <p class="text-gray-400 text-sm">Udemy, freeCodeCamp, Frontend Masters | 2020 - 2023</p> <p class="text-gray-300 mt-2 text-sm leading-relaxed"> Sertifikovan u modernim front-end tehnologijama uključujući React, Tailwind CSS i JavaScript ES6. </p> </div> <div class="border-l-4 border-redneon pl-6 hover:shadow-glow transition duration-300"> <h3 class="text-xl font-semibold text-redneon">Massachusetts Institute of Technology</h3> <p class="text-gray-400 text-sm">Bachelor of Science in Computer Science and Engineering | 2026 - 2030</p> <p class="text-gray-300 mt-2 text-sm leading-relaxed"> Fokus: algoritmi, softversko inženjerstvo, veštačka inteligencija, sistemi. </p> </div> </div> <div class="w-24 h-[2px] bg-redneon/50 mt-16 rounded-full shadow-[0_0_15px_rgba(255,26,26,0.5)]"></div> </section>
-<!-- ISKUSTVO -->
-<section id="iskustvo" class="min-h-screen flex flex-col items-center justify-center px-6 md:px-10 py-24 bg-dark/90 relative overflow-hidden">
+<section id="obrazovanje" class="min-h-screen flex flex-col items-center justify-center px-6 md:px-10 bg-dark/95 relative overflow-hidden"> <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,26,26,0.07)_0%,transparent_70%)]"></div> <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-redneon mb-10 sm:mb-12 tracking-widest uppercase animate-fade text-center">Obrazovanje</h2> <div class="max-w-3xl w-full flex flex-col gap-10"> <div class="border-l-4 border-redneon pl-6 hover:shadow-glow transition duration-300"> <h3 class="text-xl font-semibold text-redneon">Srednja škola - Prva kragujevačka gimnazija</h3> <p class="text-gray-400 text-sm">Smer: Odeljenje učenika sa posebnim sposobnostima za računarstvo i informatiku | 2022 - 2026</p> <p class="text-gray-300 mt-2 text-sm leading-relaxed"> Osnovna znanja iz programiranja i mrežnih tehnologija — temelj kasnijeg IT puta. </p> </div> <div class="border-l-4 border-redneon pl-6 hover:shadow-glow transition duration-300"> <h3 class="text-xl font-semibold text-redneon">Online kursevi i sertifikacije</h3> <p class="text-gray-400 text-sm">Udemy, freeCodeCamp, Frontend Masters | 2020 - 2023</p> <p class="text-gray-300 mt-2 text-sm leading-relaxed"> Sertifikovan u modernim front-end tehnologijama uključujući React, Tailwind CSS i JavaScript ES6. </p> </div> <div class="border-l-4 border-redneon pl-6 hover:shadow-glow transition duration-300"> <h3 class="text-xl font-semibold text-redneon">Massachusetts Institute of Technology</h3> <p class="text-gray-400 text-sm">Bachelor of Science in Computer Science and Engineering | 2026 - 2030</p> <p class="text-gray-300 mt-2 text-sm leading-relaxed"> Fokus: algoritmi, softversko inženjerstvo, veštačka inteligencija, sistemi. </p> </div> </div> <div class="w-24 h-[2px] bg-redneon/50 mt-16 rounded-full shadow-[0_0_15px_rgba(255,26,26,0.5)]"></div> </section>
+
+<section id="iskustvo" class="min-h-screen flex flex-col items-center justify-center px-6 md:px-10 bg-dark/90 relative overflow-hidden">
   <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,26,26,0.07)_0%,transparent_70%)]"></div>
   <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-redneon mb-10 sm:mb-12 tracking-widest uppercase animate-fade text-center">Iskustvo</h2>
   <div class="relative max-w-3xl w-full">
@@ -219,8 +208,7 @@
   <div class="w-24 h-[2px] bg-redneon/50 mt-16 rounded-full shadow-[0_0_15px_rgba(255,26,26,0.5)]"></div>
 </section>
 
-<!-- VEŠTINE -->
-<section id="vit" class="min-h-screen flex flex-col items-center justify-center px-6 md:px-10 py-24 bg-dark/95 relative overflow-hidden">
+<section id="vit" class="min-h-screen flex flex-col items-center justify-center px-6 md:px-10  bg-dark/95 relative overflow-hidden">
   <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,26,26,0.07)_0%,transparent_70%)]"></div>
   <h2 class="text-4xl font-bold text-redneon mb-10 tracking-widest uppercase text-center">Veštine i Tehnologije</h2>
 
@@ -236,40 +224,43 @@
   </div>
 </section>
 
-<!-- PROJEKTI -->
-<section id="projekti" class="min-h-screen flex flex-col items-center px-6 md:px-12 py-24 bg-dark relative overflow-hidden">
+<section id="projekti" class="min-h-screen flex flex-col items-center justify-center py-12 px-6 md:px-12  bg-dark relative overflow-hidden">
   <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,26,26,0.05)_0%,transparent_80%)]"></div>
   <h2 class="text-4xl font-bold text-redneon mb-20 tracking-widest uppercase text-center">Projekti</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl w-full">
 
     <div class="group bg-[#111] border border-redneon/30 rounded-2xl overflow-hidden hover:border-redneon/60 transition">
-      <img src="p1.png" alt="Weather App" class="w-full h-56 object-cover opacity-80 group-hover:opacity-100 transition">
+      <img src="p3.png" alt="Weather App" class="w-full h-56 object-cover opacity-80 group-hover:opacity-100 transition">
       <div class="p-6 text-center">
         <h3 class="text-xl font-semibold text-white group-hover:text-redneon transition">Weather App</h3>
-        <p class="text-gray-400 text-sm mt-2">Interaktivna aplikacija za vremensku prognozu korišćenjem OpenWeather API-ja i JavaScripta.</p>
+        <p class="text-gray-400 text-sm mt-2">Interaktivna aplikacija za vremensku prognozu korišćenjem OpenWeather API-ja i JavaScripta. Aplikacija omogućava korisnicima da unesu ime grada i dobiju trenutne vremenske podatke uključujući temperaturu, vlažnost i vremenske uslove. Takođe, koristi moderni dizajn i dinamičko ažuriranje podataka bez potrebe za osvežavanjem stranice.</p>
+        <button class="mt-4 px-6 py-2 border border-redneon text-redneon rounded-full hover:bg-redneon hover:text-black transition">Vidi projekat</button>
       </div>
     </div>
 
     <div class="group bg-[#111] border border-redneon/30 rounded-2xl overflow-hidden hover:border-redneon/60 transition">
       <img src="p2.png" alt="Discord Bot" class="w-full h-56 object-cover opacity-80 group-hover:opacity-100 transition">
       <div class="p-6 text-center">
-        <h3 class="text-xl font-semibold text-white group-hover:text-redneon transition">Discord Bot</h3>
-        <p class="text-gray-400 text-sm mt-2">Bot za Discord servere napisan u JavaScriptu, sa komandama za muziku, zabavu i moderaciju.</p>
+        <h3 class="text-xl font-semibold text-white group-hover:text-redneon transition">2D Console Engine</h3>
+        <p class="text-gray-400 text-sm mt-2">Razvijen u C++, ovaj projekat je jednostavan 2D "engine" za prikaz objekata u konzoli i osnovno kretanje kroz prostor. Korisnik može da kontroliše objekat pomoću tastera, a engine omogućava prikaz više objekata i jednostavne interakcije između njih. Projekat demonstrira razumevanje objektno orijentisanog programiranja.</p>
+        <button class="mt-4 px-6 py-2 border border-redneon text-redneon rounded-full hover:bg-redneon hover:text-black transition">Vidi projekat</button>
       </div>
     </div>
 
     <div class="group bg-[#111] border border-redneon/30 rounded-2xl overflow-hidden hover:border-redneon/60 transition">
-      <img src="p3.png" alt="C++ Projekt" class="w-full h-56 object-cover opacity-80 group-hover:opacity-100 transition">
+      <img src="p1.png" alt="C++ Projekt" class="w-full h-56 object-cover opacity-80 group-hover:opacity-100 transition">
       <div class="p-6 text-center">
-        <h3 class="text-xl font-semibold text-white group-hover:text-redneon transition">C++ Projekat — Mini Engine</h3>
-        <p class="text-gray-400 text-sm mt-2">Manji projekat razvijen u C++, implementacija prostog 2D "enginea" za prikaz objekata i kretanje kroz konzolu.</p>
+        <h3 class="text-xl font-semibold text-white group-hover:text-redneon transition">Coci Slot – Android aplikacija</h3>
+        <p class="text-gray-400 text-sm mt-2">Jednostavna slot igra razvijena u Kotlinu koristeći Android Studio. Aplikacija omogućava korisniku da pokrene spin i vidi nasumične kombinacije simbola, prati rezultat i pokazuje animacije prilikom dobitka. Fokus projekta bio je na osnovnoj logici igre, interaktivnom korisničkom interfejsu i radu sa osnovnim Android komponentama.</p>
+        <button class="mt-4 px-6 py-2 border border-redneon text-redneon rounded-full hover:bg-redneon hover:text-black transition">Vidi projekat</button>
       </div>
     </div>
 
   </div>
 </section>
-<section id="contact" class="py-24 px-6 bg-dark/90">
+
+<section id="contact" class="py-26 md:py-32 px-6 bg-dark/90">
   <h2 class="text-4xl font-bold mb-12 text-center text-redneon">Kontakt</h2>
   <form class="max-w-xl mx-auto flex flex-col gap-6">
     <input type="text" placeholder="Ime" class="p-3 bg-transparent border border-redneon/40 rounded-lg focus:border-redneon outline-none">
@@ -282,7 +273,3 @@
 <script src="https://kit.fontawesome.com/a2d0e9c6a6.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
