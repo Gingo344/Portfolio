@@ -257,32 +257,35 @@
   <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,26,26,0.07)_0%,transparent_70%)]"></div>
   <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-redneon mb-10 sm:mb-12 tracking-widest uppercase animate-fade text-center">Iskustvo</h2>
   <div class="relative max-w-3xl w-full">  
-    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-redneon/30"></div>
+    <!-- Vertikalna linija, skrivena na malim ekranima -->
+    <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-redneon/30 hidden md:block"></div>
     <div class="relative flex flex-col md:flex-row items-center mb-16">
-      <div class="w-full md:w-1/2 md:pr-10 text-right">
+      <div class="w-full md:w-1/2 md:pr-10 text-center md:text-right">
         <h3 class="text-xl font-semibold text-redneon">OOP sa C++ i C#</h3>
         <p class="text-gray-400 text-sm">2023 - 2024</p>
         <p class="text-gray-300 mt-2 text-sm leading-relaxed">
           Učio sam objektno orijentisano programiranje, rad sa klasama, strukturama i osnovama softverskog inženjerstva.
         </p>
       </div>
+      <!-- Krug, skriven na malim ekranima -->
       <div class="hidden md:block w-6 h-6 bg-redneon rounded-full shadow-[0_0_15px_rgba(255,26,26,0.6)]"></div>
       <div class="w-full md:w-1/2 md:pl-10"></div>
     </div>
     <div class="relative flex flex-col md:flex-row items-center mb-16">
-      <div class="w-full md:w-1/2 md:pr-10"></div>
+      <div class="w-full md:w-1/2 md:pr-10 text-center md:text-left"></div>
       <div class="hidden md:block w-6 h-6 bg-redneon rounded-full shadow-[0_0_15px_rgba(255,26,26,0.6)]"></div>
-      <div class="w-full md:w-1/2 md:pl-10 text-left">
+      <div class="w-full md:w-1/2 md:pl-10 text-center md:text-left">
         <h3 class="text-xl font-semibold text-redneon">Web osnove — HTML & CSS</h3>
         <p class="text-gray-400 text-sm">2022</p>
         <p class="text-gray-300 mt-2 text-sm leading-relaxed">
           Kroz srednju školu upoznao sam se sa osnovama web dizajna i front-end razvoja — kako izgleda i funkcioniše moderna web stranica.
         </p>
       </div>
-      
     </div>
+
+    <!-- Treći blok iskustva -->
     <div class="relative flex flex-col md:flex-row items-center">
-      <div class="w-full md:w-1/2 md:pr-10 text-right">
+      <div class="w-full md:w-1/2 md:pr-10 text-center md:text-right">
         <h3 class="text-xl font-semibold text-redneon">Prvi koraci u Pythonu</h3>
         <p class="text-gray-400 text-sm">2019 - 2020</p>
         <p class="text-gray-300 mt-2 text-sm leading-relaxed">
@@ -292,9 +295,11 @@
       <div class="hidden md:block w-6 h-6 bg-redneon rounded-full shadow-[0_0_15px_rgba(255,26,26,0.6)]"></div>
       <div class="w-full md:w-1/2 md:pl-10"></div>
     </div>
+
   </div>
-  <div class="w-24 h-[2px] bg-redneon/50 mt-16 rounded-full shadow-[0_0_15px_rgba(255,26,26,0.5)]"></div>
+  <div class="w-24 h-[2px] bg-redneon/50 mt-16 rounded-full shadow-[0_0_15px_rgba(255,26,26,0.5)] hidden md:block"></div>
 </section>
+
 
 <section id="vit" class="min-h-screen flex flex-col items-center justify-center px-6 md:px-10  bg-dark/95 relative overflow-hidden">
   <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,26,26,0.07)_0%,transparent_70%)]"></div>
@@ -375,3 +380,4 @@
 <script src="https://kit.fontawesome.com/a2d0e9c6a6.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
